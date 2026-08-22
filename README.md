@@ -15,7 +15,7 @@ portfolio/
 │   └── script.js           → mobile nav, hero typing effect, certificate lightbox
 └── assets/
     ├── images/
-    │   └── profile.jpg     → your profile photo, shown in the hero section
+    │   └── profile.jpg     → profile photo, shown in the hero section
     ├── resume/
     │   └── Debesh_Mahato_Resume.pdf   → linked from the nav bar & contact section
     └── certs/
@@ -53,11 +53,3 @@ both the nav bar "Résumé" link and the Contact section link to it automaticall
 - LeetCode → https://leetcode.com/u/Debsesh_CSE_77/
 - Live project → https://codecraft-code-editor.onrender.com (CodeCraft)
 
-## Deploying
-
-Any static host works since there's no build step:
-
-- **Netlify**: drag-and-drop the `portfolio` folder onto app.netlify.com/drop
-- **Vercel**: `vercel deploy` from inside the folder
-- **GitHub Pages**: push this folder to a repo and enable Pages on the `main` branch
-"# Debesh-Mahato-portfolio-website" 
