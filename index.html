@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Debesh Mahato — Full Stack Developer</title>
+<meta name="description" content="Debesh Mahato — Computer Science Engineering student and Full Stack Developer. React, Next.js, Node.js, MySQL, and applied cryptography.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  // Set theme before first paint to avoid a flash of the wrong theme.
+  (function(){
+    try{
+      var saved = localStorage.getItem('dm-theme');
+      var theme = saved || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      document.documentElement.setAttribute('data-theme', theme);
+    }catch(e){}
+  })();
+</script>
+</head>
+<body>
+
+<!-- background circuit texture -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="railnav" id="railnav">
+  <div class="railnav__brand">
+    <span class="dot" aria-hidden="true"></span>
+    <a href="#top">DM</a>
+  </div>
+  <nav class="railnav__links">
+    <a href="#about" class="navlink" data-label="profile">About</a>
+    <a href="#stack" class="navlink" data-label="stack">Stack</a>
+    <a href="#work" class="navlink" data-label="log">Experience</a>
+    <a href="#projects" class="navlink" data-label="build">Projects</a>
+    <a href="#certs" class="navlink" data-label="proof">Certificates</a>
+    <a href="#contact" class="navlink" data-label="ping">Contact</a>
+  </nav>
+  <a class="railnav__cta" href="assets/resume/Debesh_Mahato_Resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme">
+    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.5M12 19v2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M2.5 12H5M19 12h2.5M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg>
+    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>
+  </button>
+  <button class="railnav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__console">
+      <!-- <p class="hero__eyebrow mono">// SYSTEM ONLINE</p> -->
+      <h1 class="hero__title">
+        <span class="hero__type" id="heroType"></span><span class="cursor" aria-hidden="true">▌</span>
+      </h1>
+      <p class="hero__role mono">Computer Science Engineering Student — Full Stack Developer</p>
+      <p class="hero__desc">
+        I build responsive, production-shaped web applications with React, Next.js, Node.js and MySQL —
+        and spend my off-hours on cryptography, network security, and DSA. Currently completing a
+        B.Tech at Ramkrishna Mahato Government Engineering College.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--fill">View Projects</a>
+        <a href="#contact" class="btn btn--ghost">Contact Information</a>
+      </div>
+
+      <ul class="statusbar mono" aria-label="Connected profiles">
+        <li><a href="https://github.com/Debesh-Mahato-CSE" target="_blank" rel="noopener"><span class="led" data-c="1"></span>GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/debesh-mahato-78a102338" target="_blank" rel="noopener"><span class="led" data-c="2"></span>LinkedIn</a></li>
+        <li><a href="https://leetcode.com/u/Debsesh_CSE_77/" target="_blank" rel="noopener"><span class="led" data-c="3"></span>LeetCode</a></li>
+        <li><a href="mailto:debeshkumar088@gmail.com"><span class="led" data-c="4"></span>Email</a></li>
+      </ul>
+    </div>
+
+    <div class="hero__portrait">
+      <div class="portrait-frame">
+        <img src="assets/images/profile.jpg" alt="Portrait of Debesh Mahato">
+        <div class="portrait-frame__tag mono">DEBESH_MAHATO.jpg</div>
+      </div>
+      <div class="portrait-scan" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <!-- <p class="section__eyebrow mono"># profile</p> -->
+    <h2 class="section__title">About</h2>
+    <div class="about__grid">
+      <p class="about__text">
+        I'm a Computer Science Engineering student building full-stack products end to end — from
+        interactive React interfaces down to the MySQL schema underneath. My internship at Graphora India
+        had me shipping real interfaces for a restaurant automation SaaS: an admin dashboard, QR-code
+        ordering, and the plumbing that connects both to a backend team over Git.
+      </p>
+      <p class="about__text">
+        Outside of feature work, I go looking for how systems break — a cryptography &amp; network security
+        bootcamp at IIT (ISM) Dhanbad and a cyber job simulation with Deloitte, both hands-on rather than
+        theoretical. I keep my algorithmic thinking sharp on LeetCode and treat every project as a chance
+        to tighten the gap between "it works" and "it's built well."
+      </p>
+      <dl class="about__facts mono">
+        <div><dt>Based in</dt><dd>Purulia, West Bengal, India</dd></div>
+        <div><dt>Focus</dt><dd>Full-Stack Web · Security</dd></div>
+        <div><dt>Languages</dt><dd>Bengali · English · Hindi</dd></div>
+        <div><dt>Status</dt><dd class="status-live"><span class="led" data-c="1"></span>Open to opportunities</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ STACK ============ -->
+  <section class="section" id="stack">
+    <!-- <p class="section__eyebrow mono"># stack</p> -->
+    <h2 class="section__title">Technical Stack</h2>
+
+    <div class="stackgrid">
+      <div class="stackcard">
+        <h3 class="mono">Languages</h3>
+        <ul><li>Java</li><li>Python</li><li>C</li><li>JavaScript</li><li>TypeScript</li></ul>
+      </div>
+      <div class="stackcard">
+        <h3 class="mono">Frontend</h3>
+        <ul><li>HTML5 / CSS3</li><li>React.js</li><li>Next.js</li><li>Tailwind CSS</li></ul>
+      </div>
+      <div class="stackcard">
+        <h3 class="mono">Backend</h3>
+        <ul><li>Node.js</li><li>Express.js</li></ul>
+      </div>
+      <div class="stackcard">
+        <h3 class="mono">Database</h3>
+        <ul><li>MySQL</li><li>MongoDB</li></ul>
+      </div>
+      <div class="stackcard">
+        <h3 class="mono">Tools</h3>
+        <ul><li>Git / GitHub</li><li>VS Code</li><li>Postman</li><li>XAMPP</li><li>npm</li></ul>
+      </div>
+      <div class="stackcard">
+        <h3 class="mono">Practice</h3>
+        <ul><li>Data Structures &amp; Algorithms</li><li>Problem Solving on LeetCode</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section" id="work">
+    <h2 class="section__title">Experience</h2>
+
+    <div class="timeline">
+      <article class="timeline__item">
+        <div class="timeline__meta mono">May 2026 — Aug 2026</div>
+        <div class="timeline__body">
+          <h3>Frontend Developer Intern <span class="mono timeline__co">· Graphora India Pvt. Ltd.</span></h3>
+          <ul>
+            <li>Developed responsive React interfaces for a live product.</li>
+            <li>Worked on Restaurant Automation SaaS — a restaurant management platform.</li>
+            <li>Implemented the admin dashboard and QR-code ordering functionality.</li>
+            <li>Collaborated with backend developers using Git in a shared codebase.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+      <h2 class="section__title">Projects</h2>
+
+    <div class="projectgrid">
+
+      <article class="projectcard projectcard--featured">
+        <div class="projectcard__head">
+          <h3>CodeCraft</h3>
+          <a href="https://codecraft-code-editor.onrender.com" target="_blank" rel="noopener" class="mono projectcard__link">Live ↗</a>
+        </div>
+        <p>An online coding platform supporting C, C++, Java and Python with real-time code execution in the browser.</p>
+        <ul class="tagrow mono"><li>React</li><li>Node.js</li><li>Express.js</li></ul>
+      </article>
+
+      <article class="projectcard">
+        <div class="projectcard__head"><h3>Restaurant Automation SaaS</h3></div>
+        <p>A restaurant management platform with an admin dashboard and QR-code based ordering, built during my internship.</p>
+        <ul class="tagrow mono"><li>React</li><li>MySQL</li></ul>
+      </article>
+
+      <article class="projectcard">
+        <div class="projectcard__head"><h3>MedGuide</h3></div>
+        <p>A doctor appointment and healthcare management system for booking and tracking patient consultations.</p>
+        <ul class="tagrow mono"><li>React</li><li>Node.js</li><li>MySQL</li></ul>
+      </article>
+
+      <article class="projectcard">
+        <div class="projectcard__head"><h3>Library Management System</h3></div>
+        <p>A library system with AI-powered book recommendations for readers.</p>
+        <ul class="tagrow mono"><li>JavaScript</li><li>MySQL</li></ul>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ CERTIFICATES ============ -->
+  <section class="section" id="certs">
+    <!-- <p class="section__eyebrow mono">// proof</p> -->
+    <h2 class="section__title">Certificates &amp; Credentials</h2>
+    <p class="section__lede">
+      A running record of completed programs. Click any card to view the full certificate.
+    </p>
+
+    <div class="certgrid" id="certGrid">
+
+      <a class="certcard" href="assets/certs/graphura-internship.png" target="_blank" rel="noopener" data-title="Internship — Full Stack Development" data-org="Graphura India Pvt. Ltd." data-date="May – Aug 2026">
+        <img src="assets/certs/graphura-internship.png" alt="Graphura India internship completion certificate for Debesh Mahato">
+        <div class="certcard__label">
+          <h3>Internship — Full Stack Development</h3>
+          <p class="mono">Graphura India Pvt. Ltd. · 2026</p>
+        </div>
+      </a>
+
+      <a class="certcard" href="assets/certs/iit-ism-cryptography.png" target="_blank" rel="noopener" data-title="Foundations of Secure Communication Using Cryptography" data-org="IIT (ISM) Dhanbad · MeitY ISEA" data-date="Feb 2026">
+        <img src="assets/certs/iit-ism-cryptography.png" alt="IIT ISM Dhanbad bootcamp certificate on cryptography and network security">
+        <div class="certcard__label">
+          <h3>Cryptography &amp; Network Security Bootcamp</h3>
+          <p class="mono">IIT (ISM) Dhanbad · Feb 2026</p>
+        </div>
+      </a>
+
+      <a class="certcard" href="assets/certs/deloitte-cyber-sim.png" target="_blank" rel="noopener" data-title="Cyber Job Simulation" data-org="Deloitte (via Forage)" data-date="Jul 2025">
+        <img src="assets/certs/deloitte-cyber-sim.png" alt="Deloitte Cyber Job Simulation certificate of completion for Debesh Mahato">
+        <div class="certcard__label">
+          <h3>Cyber Job Simulation</h3>
+          <p class="mono">Deloitte · Jul 2025</p>
+        </div>
+      </a>
+
+      
+
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section class="section" id="education">
+    <!-- <p class="section__eyebrow mono">// education</p> -->
+    <h2 class="section__title">Education</h2>
+
+    <div class="edulist">
+      <div class="eduitem">
+        <div class="eduitem__meta mono">2024 – 2027</div>
+        <div>
+          <h3>B.Tech in Computer Science &amp; Engineering</h3>
+          <p>Ramkrishna Mahato Government Engineering College <span class="mono">· CGPA 7.7</span></p>
+        </div>
+      </div>
+      <div class="eduitem">
+        <div class="eduitem__meta mono">2021 - 2023</div>
+        <div>
+          <h3>Diploma in Computer Science &amp; Technology</h3>
+          <p>Raghunathpur Government Polytechnic <span class="mono">· 81%</span></p>
+        </div>
+      </div>
+      <div class="eduitem">
+        <div class="eduitem__meta mono">2020</div>
+        <div>
+          <h3>Higher Secondary (WBCHSE)</h3>
+          <p>Bhowridih High School (H.S.) <span class="mono">· 85.8%</span></p>
+        </div>
+      </div>
+      <div class="eduitem">
+        <div class="eduitem__meta mono">2019</div>
+        <div>
+          <h3>ADCA — Advance Diploma in Computer Application(1 Year) </h3>
+          <!-- <p>Bhowridih High School (H.S.) <span class="mono">· 85.8%</span></p> -->
+        </div>
+      </div>
+      <div class="eduitem">
+        <div class="eduitem__meta mono">2018</div>
+        <div>
+          <h3>Secondary (WBBSE)</h3>
+          <p>Bhowridih High School (H.S.) <span class="mono">· 70%</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section--contact" id="contact">
+    <!-- <p class="section__eyebrow mono">// ping</p> -->
+    <h2 class="section__title">Let's Build Something</h2>
+    <p class="section__lede">
+      Open to internships, full-stack roles, and interesting side projects. Reach out directly —
+      I read everything.
+    </p>
+
+    <div class="contactgrid">
+      <a class="contactcard" href="mailto:debeshkumar088@gmail.com">
+        <span class="mono contactcard__k">Email</span>
+        <span class="contactcard__v">debeshkumar088@gmail.com</span>
+      </a>
+      <a class="contactcard" href="tel:+916295249298">
+        <span class="mono contactcard__k">Phone</span>
+        <span class="contactcard__v">+91 62952 49298</span>
+      </a>
+      <a class="contactcard" href="https://github.com/Debesh-Mahato-CSE" target="_blank" rel="noopener">
+        <span class="mono contactcard__k">GitHub</span>
+        <span class="contactcard__v">Debesh-Mahato-CSE</span>
+      </a>
+      <a class="contactcard" href="https://www.linkedin.com/in/debesh-mahato-78a102338" target="_blank" rel="noopener">
+        <span class="mono contactcard__k">LinkedIn</span>
+        <span class="contactcard__v">debesh-mahato</span>
+      </a>
+      <a class="contactcard" href="https://leetcode.com/u/Debsesh_CSE_77/" target="_blank" rel="noopener">
+        <span class="mono contactcard__k">LeetCode</span>
+        <span class="contactcard__v">Debsesh_CSE_77</span>
+      </a>
+      <a class="contactcard" href="assets/resume/Debesh_Mahato_Resume.pdf" target="_blank" rel="noopener">
+        <span class="mono contactcard__k">Résumé</span>
+        <span class="contactcard__v">Download PDF ↗</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="mono">© 2026 Debesh Mahato — Built with HTML, CSS &amp; JS.</p>
+</footer>
+
+<!-- Lightbox for certificates -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox__close" id="lightboxClose" aria-label="Close">✕</button>
+  <figure>
+    <img id="lightboxImg" src="" alt="">
+    <figcaption>
+      <h3 id="lightboxTitle" class="mono"></h3>
+      <p id="lightboxMeta" class="mono"></p>
+    </figcaption>
+  </figure>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
