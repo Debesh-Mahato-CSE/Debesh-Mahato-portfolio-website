@@ -148,23 +148,46 @@
 
   <!-- ============ EXPERIENCE ============ -->
   <section class="section" id="work">
-    <h2 class="section__title">Experience</h2>
+  <h2 class="section__title">Experience</h2>
 
-    <div class="timeline">
-      <article class="timeline__item">
-        <div class="timeline__meta mono">May 2026 — Aug 2026</div>
-        <div class="timeline__body">
-          <h3>Frontend Developer Intern <span class="mono timeline__co">· Graphora India Pvt. Ltd.</span></h3>
-          <ul>
-            <li>Developed responsive React interfaces for a live product.</li>
-            <li>Worked on Restaurant Automation SaaS — a restaurant management platform.</li>
-            <li>Implemented the admin dashboard and QR-code ordering functionality.</li>
-            <li>Collaborated with backend developers using Git in a shared codebase.</li>
-          </ul>
-        </div>
-      </article>
-    </div>
-  </section>
+  <div class="timeline">
+    <article class="timeline__item">
+      <div class="timeline__meta mono">May 2026 — Aug 2026</div>
+      <div class="timeline__body">
+        
+        <!-- Flexbox container to place items side-by-side -->
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; flex-wrap: wrap;">
+          
+          <!-- Left side: Job Details -->
+          <div style="flex: 1; min-width: 250px;">
+            <h3>Full Stack Developer Intern <span class="mono timeline__co">· Graphura India Pvt. Ltd.</span></h3>
+            <ul>
+              <li>Developed responsive React interfaces for a live product.</li>
+              <li>Worked on Restaurant Automation SaaS — a restaurant management platform.</li>
+              <li>Implemented the admin dashboard and QR-code ordering functionality.</li>
+              <li>Collaborated with backend developers using Git in a shared codebase.</li>
+            </ul>
+          </div>
+
+          <!-- Right side: Small Certificate -->
+          <!-- Adjust the 'width: 220px' to make the card smaller or larger -->
+          <div style="flex-shrink: 0; width: 220px;">
+            <a class="certcard" href="assets/certs/graphura-internship.png" target="_blank" rel="noopener" data-title="Internship — Full Stack Development" data-org="Graphura India Pvt. Ltd." data-date="May – Aug 2026" style="display: block;">
+              <!-- Added max-width to ensure the image scales to the small container -->
+              <img src="assets/certs/graphura-internship.png" alt="Graphura India internship completion certificate for Debesh Mahato" style="max-width: 100%; height: auto; border-radius: 6px;">
+              <div class="certcard__label">
+                <h3 style="font-size: 0.9rem; margin: 5px 0;">Internship — Full Stack Development</h3>
+                <p class="mono" style="font-size: 0.8rem; margin: 0;">Graphura India Pvt. Ltd. · 2026</p>
+              </div>
+            </a>
+          </div>
+
+        </div> <!-- End Flexbox container -->
+
+      </div>
+    </article>
+  </div>
+</section>
 
   <!-- ============ PROJECTS ============ -->
   <section class="section" id="projects">
@@ -185,6 +208,20 @@
         <div class="projectcard__head"><h3>Restaurant Automation SaaS</h3></div>
         <p>A restaurant management platform with an admin dashboard and QR-code based ordering, built during my internship.</p>
         <ul class="tagrow mono"><li>React</li><li>MySQL</li></ul>
+      </article>
+
+      <article class="projectcard">
+        <div class="projectcard__head">
+        <h3>Personal Portfolio Website</h3>
+        <a href="https://debesh-mahato-portfolio.vercel.app/" target="_blank" rel="noopener" class="mono projectcard__link">Live ↗</a>
+      </div>
+        <p>A responsive personal portfolio website showcasing my projects, technical skills, internship experience, certifications and professional profile.</p>
+        <ul class="tagrow mono">
+        <li>React</li>
+        <li>JavaScript</li>
+        <li>Tailwind CSS</li>
+        <li>Vercel</li>
+        </ul>
       </article>
 
       <article class="projectcard">
@@ -212,12 +249,12 @@
 
     <div class="certgrid" id="certGrid">
 
-      <a class="certcard" href="assets/certs/graphura-internship.png" target="_blank" rel="noopener" data-title="Internship — Full Stack Development" data-org="Graphura India Pvt. Ltd." data-date="May – Aug 2026">
-        <img src="assets/certs/graphura-internship.png" alt="Graphura India internship completion certificate for Debesh Mahato">
-        <div class="certcard__label">
-          <h3>Internship — Full Stack Development</h3>
-          <p class="mono">Graphura India Pvt. Ltd. · 2026</p>
-        </div>
+      <a class="certcard" href="assets/certs/certificate4.png" target="_blank" rel="noopener" data-title="Advanced Software Engineering Job Simulation" data-org="Walmart (via Forage)" data-date="Aug 2026"> 
+        <img src="assets/certs/certificate4.png" alt="Walmart Advanced Software Engineering Job Simulation certificate of completion for Debesh Mahato"> 
+        <div class="certcard__label"> 
+          <h3>Advanced Software Engineering Job Simulation</h3> 
+          <p class="mono">Walmart · Aug 2026</p> 
+        </div> 
       </a>
 
       <a class="certcard" href="assets/certs/iit-ism-cryptography.png" target="_blank" rel="noopener" data-title="Foundations of Secure Communication Using Cryptography" data-org="IIT (ISM) Dhanbad · MeitY ISEA" data-date="Feb 2026">
@@ -235,8 +272,6 @@
           <p class="mono">Deloitte · Jul 2025</p>
         </div>
       </a>
-
-      
 
     </div>
   </section>
